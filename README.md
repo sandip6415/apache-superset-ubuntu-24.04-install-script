@@ -1,62 +1,141 @@
 # Apache Superset Installation Script (Ubuntu 24.04)
 
-## Overview
+![Ubuntu](https://img.shields.io/badge/Ubuntu-24.04-E95420?logo=ubuntu)
+![Apache Superset](https://img.shields.io/badge/Apache-Superset-blue)
+![Status](https://img.shields.io/badge/Status-Stable-success)
+![DevOps Project](https://img.shields.io/badge/Project-DevOps-blueviolet)
+![License](https://img.shields.io/badge/License-Custom-red)
 
-This repository contains a ready-to-use installation script for installing **Apache Superset** on **Ubuntu 24.04**.
-The script automates the setup process including required dependencies, environment configuration, and Superset initialization.
+## Project Overview
 
-## Features
+This repository contains an automated installation script for deploying **Apache Superset** on **Ubuntu 24.04**.
 
-* Automated Superset installation
-* Dependency setup
-* Python environment configuration
-* Database initialization
-* Production-ready setup support
+The script simplifies the complete setup process and prepares a server for running Superset dashboards.
 
-## Usage
+Script included in this repository:
 
-Run the script on a fresh Ubuntu 24.04 server:
-
-```bash
-chmod +x Apache_Superset_Installation_24-04.sh
-./Apache_Superset_Installation_24-04.sh
+```
+Apache_Superset_Installation_24-04.sh
 ```
 
-## Requirements
+---
 
-* Ubuntu 24.04
-* Internet connection
-* Root or sudo access
+# Architecture Overview
 
-## Security Notice
+```
+Ubuntu 24.04 Server
+        │
+        ▼
+Installation Script
+(Apache_Superset_Installation_24-04.sh)
+        │
+        ▼
+System Dependencies Installed
+        │
+        ▼
+Python Environment Setup
+        │
+        ▼
+Apache Superset Installed
+        │
+        ▼
+Superset Web Dashboard Ready
+```
+
+---
+
+# Repository Structure
+
+```
+apache-superset-ubuntu-24.04-install-script
+│
+├── Apache_Superset_Installation_24-04.sh
+├── README.md
+├── LICENSE
+└── docs
+```
+
+---
+
+# Installation
+
+## Step 1 — Clone Repository
+
+```
+git clone https://github.com/sandip6415/apache-superset-ubuntu-24.04-install-script.git
+cd apache-superset-ubuntu-24.04-install-script
+```
+
+## Step 2 — Run Script
+
+```
+chmod +x Apache_Superset_Installation_24-04.sh
+sudo ./Apache_Superset_Installation_24-04.sh
+```
+
+---
+
+# What This Script Installs
+
+The script performs:
+
+* System update
+* Required package installation
+* Python environment setup
+* Apache Superset installation
+* Database initialization
+* Superset configuration
+* Service setup
+
+---
+
+# Use Cases
+
+This project is useful for:
+
+* DevOps Engineers
+* Cloud Engineers
+* System Administrators
+* Data Platform Teams
+
+---
+
+# Security Notes
 
 Before running the script:
 
-* Review the script contents.
-* Ensure it matches your environment requirements.
-* Modify variables if needed.
+* Review all commands
+* Remove sensitive information if added
+* Use secure credentials
+* Run on a clean Ubuntu server
 
-## Usage Policy
+---
 
-This repository is shared for **reference and learning purposes**.
+# DevOps Portfolio Project
 
-You are allowed to:
+This repository demonstrates:
 
-* View the script
-* Download the script
-* Use it internally
+* Linux automation
+* Application deployment
+* Infrastructure setup
+* Production-ready scripting
 
-You are NOT allowed to:
+---
 
-* Redistribute this script
-* Publish modified versions
-* Use it commercially without permission
+# Author
 
-## Author
+**Sandip Pawar**
 
-Created by **Sandip Pawar**
+---
 
-## Disclaimer
+# License
 
-This script is provided "as-is" without any warranty.
-Use it at your own risk in production environments.
+This project is protected under a custom license.
+Unauthorized redistribution or modification is not allowed.
+
+---
+
+# Disclaimer
+
+This script is provided **as-is**.
+Use at your own risk in production environments.
